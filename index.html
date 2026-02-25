@@ -1,18 +1,155 @@
 <!doctype html>
-<title>Site Maintenance</title>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Sitio en Mantenimiento</title>
+
 <style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
+    body {
+        text-align: center;
+        padding: 40px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background: #f5f5f5;
+        color: #333;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        color: #222;
+    }
+
+    article {
+        display: block;
+        text-align: left;
+        max-width: 700px;
+        margin: 0 auto 40px auto;
+        background: #fff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    a {
+        color: #d47a00;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #333;
+    }
+
+    /* Estilos del minijuego */
+    #game {
+        margin: 0 auto;
+        background: #fff;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        display: block;
+    }
+
+    #game-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
 </style>
+</head>
+
+<body>
 
 <article>
-    <h1>We&rsquo;ll be back soon!</h1>
+    <h1>¡Volveremos pronto!</h1>
     <div>
-        <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="mailto:#">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
-        <p>&mdash; The Team</p>
+        <p>Disculpa las molestias, pero estamos realizando tareas de mantenimiento en este momento.  
+        Si necesitas algo, siempre puedes <a href="mailto:#">contactarnos</a>.  
+        ¡Estaremos de vuelta en línea muy pronto!</p>
+
+        <p>&mdash; El Equipo</p>
     </div>
 </article>
+
+<div id="game-title">Mientras esperas, juega un rato:</div>
+<canvas id="game" width="600" height="150"></canvas>
+
+<script>
+/* --- Mini juego estilo Dino de Google --- */
+
+const canvas = document.getElementById("game");
+const ctx = canvas.getContext("2d");
+
+let dino = { x: 50, y: 110, width: 30, height: 30, vy: 0, jumping: false };
+let cactus = { x: 600, y: 115, width: 20, height: 35 };
+let gravity = 1.5;
+let speed = 6;
+let gameOver = false;
+
+function drawDino() {
+    ctx.fillStyle = "#333";
+    ctx.fillRect(dino.x, dino.y, dino.width, dino.height);
+}
+
+function drawCactus() {
+    ctx.fillStyle = "#2e7d32";
+    ctx.fillRect(cactus.x, cactus.y, cactus.width, cactus.height);
+}
+
+function update() {
+    if (gameOver) return;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Dino
+    dino.y += dino.vy;
+    if (dino.y < 110) {
+        dino.vy += gravity;
+    } else {
+        dino.y = 110;
+        dino.vy = 0;
+        dino.jumping = false;
+    }
+
+    // Cactus
+    cactus.x -= speed;
+    if (cactus.x < -20) {
+        cactus.x = 600 + Math.random() * 200;
+    }
+
+    // Colisión
+    if (
+        dino.x < cactus.x + cactus.width &&
+        dino.x + dino.width > cactus.x &&
+        dino.y < cactus.y + cactus.height &&
+        dino.y + dino.height > cactus.y
+    ) {
+        gameOver = true;
+        ctx.font = "30px Arial";
+        ctx.fillStyle = "#c62828";
+        ctx.fillText("¡Fin del juego!", 220, 80);
+        return;
+    }
+
+    drawDino();
+    drawCactus();
+
+    requestAnimationFrame(update);
+}
+
+document.addEventListener("keydown", () => {
+    if (!dino.jumping && !gameOver) {
+        dino.vy = -20;
+        dino.jumping = true;
+    }
+});
+
+update();
+</script>
+
+</body>
+</html>
