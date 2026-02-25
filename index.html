@@ -68,10 +68,10 @@
     <h1>¡Volveremos pronto!</h1>
     <div>
         <p>Disculpa las molestias, pero estamos realizando tareas de mantenimiento en este momento.  
-        Si necesitas algo, siempre puedes <a href="mailto:#">contactarnos</a>.  
+        Si necesitas algo, siempre puedes <a href="mailto:aaron@hyspania.net">contactarnos</a>.  
         ¡Estaremos de vuelta en línea muy pronto!</p>
 
-        <p>&mdash; El Equipo</p>
+        <p>&mdash; El Equipo de Hyspania.</p>
     </div>
 </article>
 
@@ -79,7 +79,6 @@
 <canvas id="game" width="600" height="150"></canvas>
 
 <script>
-/* --- Mini juego estilo Dino de Google --- */
 
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
@@ -87,7 +86,9 @@ const ctx = canvas.getContext("2d");
 let dino = { x: 50, y: 110, width: 30, height: 30, vy: 0, jumping: false };
 let cactus = { x: 600, y: 115, width: 20, height: 35 };
 let gravity = 1.5;
-let speed = 6;
+
+let speed = 3; 
+
 let gameOver = false;
 
 function drawDino() {
@@ -126,7 +127,7 @@ function update() {
         dino.x < cactus.x + cactus.width &&
         dino.x + dino.width > cactus.x &&
         dino.y < cactus.y + cactus.height &&
-        dino.y + dino.height > cactus.y
+        dino.y + dino.height > cactus.height
     ) {
         gameOver = true;
         ctx.font = "30px Arial";
