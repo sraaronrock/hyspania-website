@@ -1,79 +1,616 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<title>Sitio en Mantenimiento</title>
-
-<style>
-    body {
-        text-align: center;
-        padding: 40px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        background: #f5f5f5;
-        color: #333;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Hyspania - Servidor #1 de Hytale en España | jugar.hyspania.net</title>
+    <meta name="description" content="Hyspania es el servidor número 1 de Hytale en España. Únete a la mejor comunidad hispanohablante con minijuegos, survival, PvP y más. IP: jugar.hyspania.net">
+    <meta name="keywords" content="Hyspania, servidor Hytale España, Hytale español, servidor Hytale hispanohablante, jugar Hytale España, mejor servidor Hytale, Hytale survival, Hytale PvP, Hytale minijuegos">
+    <meta name="author" content="Hyspania">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hyspania.net/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hyspania.net/">
+    <meta property="og:title" content="Hyspania - Servidor #1 de Hytale en España">
+    <meta property="og:description" content="Únete al servidor número 1 de Hytale en España. La mejor comunidad hispanohablante te espera. IP: jugar.hyspania.net">
+    <meta property="og:image" content="https://hyspania.net/assets/images/og-image.png">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hyspania.net/">
+    <meta property="twitter:title" content="Hyspania - Servidor #1 de Hytale en España">
+    <meta property="twitter:description" content="Únete al servidor número 1 de Hytale en España. La mejor comunidad hispanohablante te espera. IP: jugar.hyspania.net">
+    <meta property="twitter:image" content="https://hyspania.net/assets/images/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Hyspania",
+        "url": "https://hyspania.net",
+        "logo": "https://hyspania.net/assets/images/logo.png",
+        "description": "Servidor número 1 de Hytale en España",
+        "sameAs": [
+            "https://twitter.com/hyspania",
+            "https://discord.gg/hyspania",
+            "https://www.youtube.com/@hyspania"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "url": "https://discord.gg/hyspania"
+        }
     }
-
-    h1 {
-        font-size: 48px;
-        margin-bottom: 10px;
-        color: #222;
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Hyspania Server",
+        "description": "Servidor número 1 de Hytale en España con survival, PvP y minijuegos",
+        "gamePlatform": "PC",
+        "genre": ["Sandbox", "Survival", "PvP", "Minigames"],
+        "playMode": "MultiPlayer",
+        "applicationCategory": "Game Server",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+        }
     }
-
-    article {
-        display: block;
-        text-align: left;
-        max-width: 700px;
-        margin: 0 auto 40px auto;
-        background: #fff;
-        padding: 40px;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    }
-
-    p {
-        font-size: 20px;
-        line-height: 1.6;
-    }
-
-    a {
-        color: #d47a00;
-        font-weight: bold;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: #333;
-    }
-
-    /* Estilos del minijuego */
-    #game {
-        margin: 0 auto;
-        background: #fff;
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        display: block;
-    }
-
-    #game-title {
-        font-size: 24px;
-        margin-bottom: 10px;
-        font-weight: bold;
-    }
-</style>
+    </script>
 </head>
-
 <body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/images/logo_hyspania.png" alt="Hyspania - Servidor #1 de Hytale en España" class="nav__logo-img">
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link active">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#modos" class="nav__link">Modos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Guias</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#comunidad" class="nav__link">Comunidad</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="nav__cta">
+                <a href="https://discord.gg/hyspania" target="_blank" rel="noopener" class="btn btn--primary">
+                    Discord
+                </a>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+        </nav>
+    </header>
 
-<article>
-    <h1>¡Volveremos pronto!</h1>
-    <div>
-        <p>Disculpa las molestias, pero estamos realizando tareas de mantenimiento en este momento.  
-        Si necesitas algo, siempre puedes <a href="mailto:aaron@hyspania.net">contactarnos</a>.  
-        ¡Estaremos de vuelta en línea muy pronto!</p>
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero__bg">
+                <img src="assets/images/servidor-hytale-espana.png" alt="Hyspania Servidor Hytale España" class="hero__bg-image">
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__content container">
+                <div class="hero__badge">
+                    <span class="hero__badge-text">SERVIDOR #1 EN ESPAÑA</span>
+                </div>
+                <h1 class="hero__title">
+                    <span class="hero__title-main">HYSPANIA</span>
+                    <span class="hero__title-sub">La aventura te espera</span>
+                </h1>
+                <p class="hero__description">
+                    Únete al servidor de Hytale más grande de España. Explora mundos infinitos, 
+                    construye imperios epicos y conquista mazmorras con la comunidad.
+                </p>
+                
+                <div class="hero__ip-box">
+                    <div class="hero__ip-label">IP DEL SERVIDOR</div>
+                    <div class="hero__ip-container">
+                        <span class="hero__ip" id="server-ip">jugar.hyspania.net</span>
+                        <button class="hero__ip-copy" id="copy-ip" title="Copiar IP">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <span class="copy-tooltip">¡Copiado!</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero__buttons">
+                    <a href="#como-jugar" class="btn btn--primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Cómo Jugar
+                    </a>
+                    <a href="https://discord.gg/hyspania" target="_blank" rel="noopener" class="btn btn--secondary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286z"/>
+                        </svg>
+                        Discord
+                    </a>
+                </div>
+                
 
-        <p>&mdash; El Equipo de Hyspania.</p>
-    </div>
-</article>
+            </div>
+            
+            <div class="hero__scroll">
+                <a href="#caracteristicas" class="hero__scroll-link">
+                    <span>Descubre más</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="7 13 12 18 17 13"></polyline>
+                        <polyline points="7 6 12 11 17 6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
 
+        <!-- Features Section -->
+        <section class="features section" id="caracteristicas">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">CARACTERÍSTICAS</span>
+                    <h2 class="section__title">¿Por qué elegir Hyspania?</h2>
+                    <p class="section__description">
+                        Descubre por qué somos el servidor favorito de Hytale en España
+                    </p>
+                </div>
+                
+                <div class="features__grid">
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Rendimiento Óptimo</h3>
+                        <p class="feature-card__description">
+                            Servidores dedicados de alta potencia con 20 TPS constantes y ping mínimo para jugadores españoles.
+                        </p>
+                    </article>
+                    
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Anti-Cheats Avanzado</h3>
+                        <p class="feature-card__description">
+                            Sistema de protección propio que garantiza un juego limpio y justo para todos los jugadores.
+                        </p>
+                    </article>
+                    
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Comunidad Activa</h3>
+                        <p class="feature-card__description">
+                            Unete a la comunidad hispanohablante de Hytale. Eventos, torneos y premios exclusivos.
+                        </p>
+                    </article>
+                    
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Soporte 24/7</h3>
+                        <p class="feature-card__description">
+                            Staff dedicado disponible las 24 horas para ayudarte con cualquier problema o duda.
+                        </p>
+                    </article>
+                    
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Contenido Exclusivo</h3>
+                        <p class="feature-card__description">
+                            Mods, texturas y características únicas desarrolladas exclusivamente para Hyspania.
+                        </p>
+                    </article>
+                    
+                    <article class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Actualizaciones Constantes</h3>
+                        <p class="feature-card__description">
+                            Nuevos contenidos cada semana. Siempre a la última con las novedades de Hytale.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Modes Section -->
+        <section class="modes section" id="modos">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">MODOS DE JUEGO</span>
+                    <h2 class="section__title">Elige tu aventura</h2>
+                    <p class="section__description">
+                        Múltiples formas de jugar para todos los estilos. Desde survival hasta PvP competitivo.
+                    </p>
+                </div>
+                
+                <div class="modes__grid">
+                    <article class="mode-card mode-card--survival">
+                        <div class="mode-card__bg">
+                            <img src="assets/images/servidor-hytale-espana.png" alt="Modo Survival" loading="lazy">
+                        </div>
+                        <div class="mode-card__overlay"></div>
+                        <div class="mode-card__content">
+                            <h3 class="mode-card__title">Survival</h3>
+                            <p class="mode-card__description">
+                                Sobrevive en un mundo hostil, recolecta recursos, construye tu base y forma clanes 
+                                para dominar el servidor. Sistema de economía y tierras protegidas.
+                            </p>
+                            <ul class="mode-card__features">
+                                <li>Economía avanzada</li>
+                                <li>Sistema de clanes</li>
+                                <li>Protección de tierras</li>
+                                <li>Misiones diarias</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <article class="mode-card mode-card--pvp">
+                        <div class="mode-card__bg">
+                            <img src="assets/images/servidor-espanol-hytale.png" alt="Modo PvP Arena" loading="lazy">
+                        </div>
+                        <div class="mode-card__overlay"></div>
+                        <div class="mode-card__content">
+                            <h3 class="mode-card__title">PvP Arena</h3>
+                            <p class="mode-card__description">
+                                Demuestra tu habilidad en combate. Rankings ELO, torneos semanales con premios 
+                                y diferentes modalidades de combate.
+                            </p>
+                            <ul class="mode-card__features">
+                                <li>Sistema ELO ranking</li>
+                                <li>Torneos semanales</li>
+                                <li>1v1, 2v2, 5v5</li>
+                                <li>Premios reales</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <article class="mode-card mode-card--creative">
+                        <div class="mode-card__bg">
+                            <img src="assets/images/servidor-hispano-hytale.png" alt="Modo Creativo" loading="lazy">
+                        </div>
+                        <div class="mode-card__overlay"></div>
+                        <div class="mode-card__content">
+                            <h3 class="mode-card__title">Creativo</h3>
+                            <p class="mode-card__description">
+                                Da rienda suelta a tu imaginación. Parcelas gratuitas, herramientas de 
+                                construcción avanzadas y concursos de construcción.
+                            </p>
+                            <ul class="mode-card__features">
+                                <li>Parcelas 200x200</li>
+                                <li>WorldEdit disponible</li>
+                                <li>Concursos mensuales</li>
+                                <li>Galería de creaciones</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <article class="mode-card mode-card--minigames">
+                        <div class="mode-card__bg">
+                            <img src="assets/images/servidor-hytale-espana.png" alt="Modo Minijuegos" loading="lazy">
+                        </div>
+                        <div class="mode-card__overlay"></div>
+                        <div class="mode-card__content">
+                            <h3 class="mode-card__title">Minijuegos</h3>
+                            <p class="mode-card__description">
+                                Diversión sin límites con docenas de minijuegos. BedWars, SkyWars, Murder Mystery 
+                                y muchos más actualizados constantemente.
+                            </p>
+                            <ul class="mode-card__features">
+                                <li>+20 minijuegos</li>
+                                <li>BedWars & SkyWars</li>
+                                <li>Murder Mystery</li>
+                                <li>Eventos especiales</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Play Section -->
+        <section class="howto section" id="como-jugar">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">GUÍA RÁPIDA</span>
+                    <h2 class="section__title">¿Cómo empezar a jugar?</h2>
+                    <p class="section__description">
+                        Únete a Hyspania en solo 3 simples pasos
+                    </p>
+                </div>
+                
+                <div class="howto__steps">
+                    <div class="howto__step">
+                        <div class="howto__step-number">1</div>
+                        <div class="howto__step-content">
+                            <h3 class="howto__step-title">Obtén Hytale</h3>
+                            <p class="howto__step-description">
+                                Si aún no tienes Hytale, cómpralo en la tienda oficial. 
+                                Asegúrate de tener la última versión instalada.
+                            </p>
+                            <a href="https://store.hytale.com/" target="_blank" rel="noopener" class="howto__step-link">
+                                Ir a la tienda de Hytale →
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="howto__step">
+                        <div class="howto__step-number">2</div>
+                        <div class="howto__step-content">
+                            <h3 class="howto__step-title">Copia la IP</h3>
+                            <p class="howto__step-description">
+                                Copia nuestra dirección del servidor. Puedes hacer clic en el botón de abajo 
+                                para copiarla automáticamente al portapapeles.
+                            </p>
+                            <button class="howto__step-ip" id="copy-ip-2">
+                                <span>jugar.hyspania.net</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="howto__step">
+                        <div class="howto__step-number">3</div>
+                        <div class="howto__step-content">
+                            <h3 class="howto__step-title">¡Conéctate y juega!</h3>
+                            <p class="howto__step-description">
+                                Abre Hytale, ve a Multijugador, pega la IP y dale a conectar. 
+                                ¡Bienvenido a la familia Hyspania!
+                            </p>
+                            <a href="https://discord.gg/hyspania" target="_blank" rel="noopener" class="howto__step-link">
+                                ¿Necesitas ayuda? Únete a Discord →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Preview Section -->
+        <section class="blog-preview section" id="blog">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__tag">BLOG & GUÍAS</span>
+                    <h2 class="section__title">Últimas noticias</h2>
+                    <p class="section__description">
+                        Mantente al día con las novedades del servidor, guías y tutoriales
+                    </p>
+                </div>
+                
+                <div class="blog-preview__grid">
+                    <article class="blog-card blog-card--featured">
+                        <div class="blog-card__image">
+                            <img src="assets/images/servidor-hytale-espana.png" alt="Guia para principiantes en Hyspania" loading="lazy">
+                            <span class="blog-card__category">Guia</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <time class="blog-card__date" datetime="2026-01-13">13 Enero 2026</time>
+                            <h3 class="blog-card__title">Guia Completa para Principiantes en Hyspania</h3>
+                            <p class="blog-card__excerpt">
+                                Todo lo que necesitas saber para empezar tu aventura en Hyspania. Desde los primeros 
+                                pasos hasta consejos avanzados para progresar rapidamente.
+                            </p>
+                            <a href="blog/guia-principiantes.html" class="blog-card__link">Leer mas</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <div class="blog-card__image">
+                            <img src="assets/images/servidor-espanol-hytale.png" alt="Actualizacion de Enero 2026" loading="lazy">
+                            <span class="blog-card__category">Actualizacion</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <time class="blog-card__date" datetime="2026-01-10">10 Enero 2026</time>
+                            <h3 class="blog-card__title">Gran Actualizacion de Enero 2026</h3>
+                            <p class="blog-card__excerpt">
+                                Nuevos modos de juego, mejoras en el sistema de clanes y mucho mas contenido exclusivo.
+                            </p>
+                            <a href="blog/actualizacion-enero-2026.html" class="blog-card__link">Leer mas</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <div class="blog-card__image">
+                            <img src="assets/images/servidor-hispano-hytale.png" alt="Torneo PvP de Invierno" loading="lazy">
+                            <span class="blog-card__category">Evento</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <time class="blog-card__date" datetime="2026-01-08">8 Enero 2026</time>
+                            <h3 class="blog-card__title">Torneo PvP de Invierno - 500 euros en premios</h3>
+                            <p class="blog-card__excerpt">
+                                El torneo mas grande del ano esta aqui. Inscribete y compite por premios increibles.
+                            </p>
+                            <a href="blog/torneo-pvp-invierno.html" class="blog-card__link">Leer mas</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="blog-preview__cta">
+                    <a href="blog.html" class="btn btn--outline">
+                        Ver todas las publicaciones
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="cta__bg"></div>
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">¿Listo para la aventura?</h2>
+                    <p class="cta__description">
+                        Unete ahora y vive la mejor experiencia de Hytale en espanol
+                    </p>
+                    <div class="cta__ip-box">
+                        <span class="cta__ip">jugar.hyspania.net</span>
+                        <button class="cta__ip-copy" id="copy-ip-3">Copiar IP</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="assets/images/logo_hyspania.png" alt="Hyspania - Servidor Hytale España" class="footer__logo">
+                    <p class="footer__tagline">
+                        El servidor #1 de Hytale en España. Donde la comunidad hispanohablante se une para vivir 
+                        aventuras épicas.
+                    </p>
+                    <div class="footer__ip">
+                        <span>IP:</span>
+                        <strong>jugar.hyspania.net</strong>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <h4 class="footer__title">Enlaces</h4>
+                    <ul class="footer__list">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#caracteristicas">Características</a></li>
+                        <li><a href="#modos">Modos de Juego</a></li>
+                        <li><a href="#como-jugar">Cómo Jugar</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__links">
+                    <h4 class="footer__title">Recursos</h4>
+                    <ul class="footer__list">
+                        <li><a href="blog.html">Guías</a></li>
+                        <li><a href="blog.html">Noticias</a></li>
+                        <li><a href="#">Reglas</a></li>
+                        <li><a href="#">Tienda</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__links">
+                    <h4 class="footer__title">Legal</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2026 Hyspania. Todos los derechos reservados. 
+                    Hyspania no está afiliado con Hypixel Studios.
+                </p>
+                <div class="footer__social">
+                    <a href="https://discord.gg/hyspania" target="_blank" rel="noopener" aria-label="Discord">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/hyspania" target="_blank" rel="noopener" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@hyspania" target="_blank" rel="noopener" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+                            <path fill="#0a0a0a" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@hyspania" target="_blank" rel="noopener" aria-label="TikTok">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
