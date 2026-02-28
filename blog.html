@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Blog & Guías - Hyspania | Servidor #1 de Hytale en España</title>
+    <meta name="description" content="Últimas noticias, guías completas y tutoriales de Hyspania, el servidor número 1 de Hytale en España. Aprende a jugar, consejos y actualizaciones.">
+    <meta name="keywords" content="guías Hytale, tutorial Hytale, noticias Hyspania, cómo jugar Hytale, consejos Hytale, servidor Hytale España, guía survival Hytale, guía PvP Hytale">
+    <meta name="author" content="Hyspania">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hyspania.net/blog">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hyspania.net/blog">
+    <meta property="og:title" content="Blog & Guías - Hyspania | Servidor #1 de Hytale en España">
+    <meta property="og:description" content="Últimas noticias, guías completas y tutoriales del servidor número 1 de Hytale en España.">
+    <meta property="og:image" content="https://hyspania.net/assets/images/og-image.png">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hyspania.net/blog">
+    <meta property="twitter:title" content="Blog & Guías - Hyspania">
+    <meta property="twitter:description" content="Últimas noticias, guías completas y tutoriales del servidor número 1 de Hytale en España.">
+    <meta property="twitter:image" content="https://hyspania.net/assets/images/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Blog de Hyspania",
+        "description": "Noticias, guías y tutoriales del servidor número 1 de Hytale en España",
+        "url": "https://hyspania.net/blog",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Hyspania",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://hyspania.net/assets/images/logo.png"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/images/logo_hyspania.png" alt="Hyspania - Servidor #1 de Hytale en España" class="nav__logo-img">
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#caracteristicas" class="nav__link">Características</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#modos" class="nav__link">Modos de Juego</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link active">Blog & Guías</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#comunidad" class="nav__link">Comunidad</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Blog Hero -->
+        <section class="blog-hero">
+            <div class="container">
+                <div class="blog-hero__content">
+                    <span class="section__tag">BLOG & GUÍAS</span>
+                    <h1 class="blog-hero__title">Noticias y Tutoriales</h1>
+                    <p class="blog-hero__description">
+                        Mantente al día con las últimas novedades, aprende con nuestras guías y 
+                        conviértete en un experto de Hyspania.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories">
+            <div class="container">
+                <div class="blog-categories__list">
+                    <button class="blog-category active" data-category="all">
+                        Todos
+                    </button>
+                    <button class="blog-category" data-category="guias">
+                        Guias
+                    </button>
+                    <button class="blog-category" data-category="noticias">
+                        Noticias
+                    </button>
+                    <button class="blog-category" data-category="actualizaciones">
+                        Actualizaciones
+                    </button>
+                    <button class="blog-category" data-category="eventos">
+                        Eventos
+                    </button>
+                    <button class="blog-category" data-category="tutoriales">
+                        Tutoriales
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="blog-featured section">
+            <div class="container">
+                <article class="featured-post">
+                    <div class="featured-post__image">
+                        <img src="assets/images/servidor-hytale-espana.png" alt="Guia Completa para Principiantes" loading="lazy">
+                        <span class="featured-post__category">Guia Destacada</span>
+                    </div>
+                    <div class="featured-post__content">
+                        <div class="featured-post__meta">
+                            <time datetime="2026-01-13">13 Enero 2026</time>
+                            <span class="featured-post__author">Por Staff Hyspania</span>
+                        </div>
+                        <h2 class="featured-post__title">
+                            Guia Completa para Principiantes en Hyspania 2026
+                        </h2>
+                        <p class="featured-post__excerpt">
+                            Todo lo que necesitas saber para comenzar tu aventura en el servidor #1 de Hytale en España. 
+                            Desde como conectarte hasta consejos avanzados para progresar rapidamente. Aprende sobre 
+                            economia, clanes, protecciones y mucho mas.
+                        </p>
+                        <div class="featured-post__tags">
+                            <span class="tag">Principiantes</span>
+                            <span class="tag">Survival</span>
+                            <span class="tag">Basico</span>
+                        </div>
+                        <a href="blog/guia-principiantes.html" class="btn btn--primary">
+                            Leer Guia Completa
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-posts section">
+            <div class="container">
+                <div class="blog-posts__grid">
+                    
+                    <!-- Post 0 - Guia Servidor -->
+                    <article class="post-card" data-category="guias">
+                        <div class="post-card__image">
+                            <img src="assets/images/servidor-espanol-hytale.png" alt="Como Abrir Servidor Hytale" loading="lazy">
+                            <span class="post-card__category">Guia</span>
+                        </div>
+                        <div class="post-card__content">
+                            <time class="post-card__date" datetime="2026-01-13">13 Enero 2026</time>
+                            <h3 class="post-card__title">Como Abrir un Servidor de Hytale - Guia Completa 2026</h3>
+                            <p class="post-card__excerpt">
+                                Tutorial paso a paso para crear tu propio servidor de Hytale. 
+                                Instalacion, configuracion, mods y optimizacion.
+                            </p>
+                            <a href="blog/guia-abrir-servidor-hytale.html" class="post-card__link">Leer mas</a>
+                        </div>
+                    </article>
+
+                    <!-- Post 1 -->
+                    <article class="post-card" data-category="actualizaciones">
+                        <div class="post-card__image">
+                            <img src="assets/images/servidor-espanol-hytale.png" alt="Actualizacion Enero 2026" loading="lazy">
+                            <span class="post-card__category">Actualizacion</span>
+                        </div>
+                        <div class="post-card__content">
+                            <time class="post-card__date" datetime="2026-01-10">10 Enero 2026</time>
+                            <h3 class="post-card__title">Gran Actualizacion de Enero 2026</h3>
+                            <p class="post-card__excerpt">
+                                Nuevos modos de juego, mejoras en el sistema de clanes, optimizaciones de rendimiento 
+                                y mucho contenido exclusivo para empezar el ano.
+                            </p>
+                            <a href="blog/actualizacion-enero-2026.html" class="post-card__link">Leer mas</a>
+                        </div>
+                    </article>
+
+                    <!-- Post 2 -->
+                    <article class="post-card" data-category="eventos">
+                        <div class="post-card__image">
+                            <img src="assets/images/servidor-hispano-hytale.png" alt="Torneo PvP Invierno" loading="lazy">
+                            <span class="post-card__category">Evento</span>
+                        </div>
+                        <div class="post-card__content">
+                            <time class="post-card__date" datetime="2026-01-08">8 Enero 2026</time>
+                            <h3 class="post-card__title">Torneo PvP de Invierno - 500 euros en premios</h3>
+                            <p class="post-card__excerpt">
+                                El torneo mas grande del ano esta aqui. Inscribete y compite por premios increibles. 
+                                Formato 1v1 y 2v2.
+                            </p>
+                            <a href="blog/torneo-pvp-invierno.html" class="post-card__link">Leer mas</a>
+                        </div>
+                    </article>
+
+                    <!-- Post 3 -->
+                    <article class="post-card" data-category="guias">
+                        <div class="post-card__image">
+                            <img src="assets/images/servidor-hytale-espana.png" alt="Guia Survival Avanzada" loading="lazy">
+                            <span class="post-card__category">Guia</span>
+                        </div>
+                        <div class="post-card__content">
+                            <time class="post-card__date" datetime="2026-01-05">5 Enero 2026</time>
+                            <h3 class="post-card__title">Guia Survival Avanzada: Domina el Modo Survival</h3>
+                            <p class="post-card__excerpt">
+                                Aprende las mejores estrategias para progresar rapidamente, conseguir recursos 
+                                eficientemente y proteger tu base.
+                            </p>
+                            <a href="blog/guia-survival-avanzada.html" class="post-card__link">Leer mas</a>
+                        </div>
+                    </article>
+
+                    <!-- Post 4 -->
+                    <article class="post-card" data-category="guias">
+                        <div class="post-card__image">
+                            <img src="assets/images/servidor-espanol-hytale.png" alt="Guia PvP Completa" loading="lazy">
+                            <span class="post-card__category">Guia</span>
+                        </div>
+                        <div class="post-card__content">
+                            <time class="post-card__date" datetime="2026-01-03">3 Enero 2026</time>
+                            <h3 class="post-card__title">Guia PvP: Tecnicas y Combos para Ganar</h3>
+                            <p class="post-card__excerpt">
+                                Domina el sistema de combate de Hytale. Aprende combos, timing, movimiento 
+                                y estrategias que usan los mejores jugadores.
+                            </p>
+                            <a href="blog/guia-pvp-completa.html" class="post-card__link">Leer mas</a>
+                        </div>
+                    </article>
+
+                    <!-- Post 5 -->
+                    <article class="post-card" data-category="tutoriales">
+                        <div class="post-card__image">
+                            <img src="assets/images/servidor-hispano-hytale.png" alt="Tutorial Sistema de Clanes" loading="lazy">
+                            <span class="post-card__category">Tutorial</span>
+                        </div>
+                        <div class="post-card__content">
+                            <time class="post-card__date" datetime="2025-12-28">28 Diciembre 2025</time>
+                            <h3 class="post-card__title">Sistema de Clanes: Crea y Gestiona tu Clan</h3>
+                            <p class="post-card__excerpt">
+                                Todo sobre el sistema de clanes de Hyspania: como crear uno, gestionar miembros, 
+                                territorios y guerras de clanes.
+                            </p>
+                            <a href="blog/tutorial-clanes.html" class="post-card__link">Leer mas</a>
+                        </div>
+                    </article>
+
+                    <!-- Post 6 -->
+                    <article class="post-card" data-category="noticias">
+                        <div class="post-card__image">
+                            <img src="assets/images/servidor-hytale-espana.png" alt="Hytale Early Access" loading="lazy">
+                            <span class="post-card__category">Noticias</span>
+                        </div>
+                        <div class="post-card__content">
+                            <time class="post-card__date" datetime="2025-12-25">25 Diciembre 2025</time>
+                            <h3 class="post-card__title">Hytale Early Access: Todo lo que Sabemos</h3>
+                            <p class="post-card__excerpt">
+                                Resumen completo del lanzamiento de Hytale en Early Access y como afectara 
+                                a Hyspania en los proximos meses.
+                            </p>
+                            <a href="blog/hytale-early-access.html" class="post-card__link">Leer mas</a>
+                        </div>
+                    </article>
+
+                    <!-- Post 7 -->
+                    <article class="post-card" data-category="guias">
+                        <div class="post-card__image">
+                            <img src="assets/images/servidor-espanol-hytale.png" alt="Guia Economia" loading="lazy">
+                            <span class="post-card__category">Guia</span>
+                        </div>
+                        <div class="post-card__content">
+                            <time class="post-card__date" datetime="2025-12-20">20 Diciembre 2025</time>
+                            <h3 class="post-card__title">Guia de Economia: Como Hacerte Rico en Hyspania</h3>
+                            <p class="post-card__excerpt">
+                                Descubre los mejores metodos para ganar dinero, que comerciar y como 
+                                maximizar tus ganancias en el servidor.
+                            </p>
+                            <a href="blog/guia-economia.html" class="post-card__link">Leer mas</a>
+                        </div>
+                    </article>
+
+                    <!-- Post 8 -->
+                    <article class="post-card" data-category="tutoriales">
+                        <div class="post-card__image">
+                            <img src="assets/images/servidor-hispano-hytale.png" alt="Tutorial Construccion" loading="lazy">
+                            <span class="post-card__category">Tutorial</span>
+                        </div>
+                        <div class="post-card__content">
+                            <time class="post-card__date" datetime="2025-12-15">15 Diciembre 2025</time>
+                            <h3 class="post-card__title">Construccion Creativa: Tips y Trucos de Diseno</h3>
+                            <p class="post-card__excerpt">
+                                Mejora tus habilidades de construccion con estos consejos de los mejores 
+                                constructores de Hyspania.
+                            </p>
+                            <a href="blog/tutorial-construccion.html" class="post-card__link">Leer mas</a>
+                        </div>
+                    </article>
+
+                    <!-- Post 9 -->
+                    <article class="post-card" data-category="eventos">
+                        <div class="post-card__image">
+                            <img src="assets/images/servidor-hytale-espana.png" alt="Evento Navidad" loading="lazy">
+                            <span class="post-card__category">Evento</span>
+                        </div>
+                        <div class="post-card__content">
+                            <time class="post-card__date" datetime="2025-12-10">10 Diciembre 2025</time>
+                            <h3 class="post-card__title">Evento Navideno 2025 - Regalos para Todos</h3>
+                            <p class="post-card__excerpt">
+                                Celebra la Navidad con nosotros. Recompensas diarias, misiones especiales 
+                                y decoraciones exclusivas.
+                            </p>
+                            <a href="blog/evento-navidad-2025.html" class="post-card__link">Leer mas</a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Pagination -->
+                <div class="blog-pagination">
+                    <button class="pagination__btn pagination__btn--prev" disabled>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                        Anterior
+                    </button>
+                    <div class="pagination__numbers">
+                        <button class="pagination__number active">1</button>
+                        <button class="pagination__number">2</button>
+                        <button class="pagination__number">3</button>
+                        <span class="pagination__dots">...</span>
+                        <button class="pagination__number">10</button>
+                    </div>
+                    <button class="pagination__btn pagination__btn--next">
+                        Siguiente
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter section">
+            <div class="container">
+                <div class="newsletter__content">
+                    <div class="newsletter__text">
+                        <h2 class="newsletter__title">¿No te quieres perder nada?</h2>
+                        <p class="newsletter__description">
+                            Suscríbete a nuestro boletín y recibe las últimas noticias, guías y 
+                            ofertas exclusivas directamente en tu correo.
+                        </p>
+                    </div>
+                    <form class="newsletter__form" action="#" method="POST">
+                        <input 
+                            type="email" 
+                            class="newsletter__input" 
+                            placeholder="Tu correo electrónico" 
+                            required
+                        >
+                        <button type="submit" class="btn btn--primary">
+                            Suscribirse
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="cta__bg"></div>
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">¿Listo para la aventura?</h2>
+                    <p class="cta__description">
+                        Unete ahora y vive la mejor experiencia de Hytale en espanol
+                    </p>
+                    <div class="cta__ip-box">
+                        <span class="cta__ip">jugar.hyspania.net</span>
+                        <button class="cta__ip-copy" id="copy-ip-blog">Copiar IP</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <img src="assets/images/logo.svg" alt="Hyspania - Servidor Hytale España" class="footer__logo">
+                    <p class="footer__tagline">
+                        El servidor #1 de Hytale en España. Donde la comunidad hispanohablante se une para vivir 
+                        aventuras épicas.
+                    </p>
+                    <div class="footer__ip">
+                        <span>IP:</span>
+                        <strong>jugar.hyspania.net</strong>
+                    </div>
+                </div>
+                
+                <div class="footer__links">
+                    <h4 class="footer__title">Enlaces</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#caracteristicas">Características</a></li>
+                        <li><a href="index.html#modos">Modos de Juego</a></li>
+                        <li><a href="index.html#como-jugar">Cómo Jugar</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__links">
+                    <h4 class="footer__title">Recursos</h4>
+                    <ul class="footer__list">
+                        <li><a href="blog.html">Guías</a></li>
+                        <li><a href="blog.html">Noticias</a></li>
+                        <li><a href="#">Reglas</a></li>
+                        <li><a href="#">Tienda</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__links">
+                    <h4 class="footer__title">Legal</h4>
+                    <ul class="footer__list">
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2026 Hyspania. Todos los derechos reservados. 
+                    Hyspania no está afiliado con Hypixel Studios.
+                </p>
+                <div class="footer__social">
+                    <a href="https://discord.gg/hyspania" target="_blank" rel="noopener" aria-label="Discord">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/hyspania" target="_blank" rel="noopener" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@hyspania" target="_blank" rel="noopener" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+                            <path fill="#0a0a0a" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@hyspania" target="_blank" rel="noopener" aria-label="TikTok">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/blog.js"></script>
+</body>
+</html>

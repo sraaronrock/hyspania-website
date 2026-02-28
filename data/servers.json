@@ -1,0 +1,14 @@
+[
+    {
+        "id": "hyspania",
+        "name": "Hyspania",
+        "ip": "jugar.hyspania.net",
+        "description": "El servidor #1 de Hytale en España. Survival, PvP, Creativo y Minijuegos. Comunidad activa y staff 24/7.",
+        "tags": ["survival", "pvp", "minijuegos", "español"],
+        "votes": 0,
+        "votesAllTime": 0,
+        "featured": true,
+        "verified": true,
+        "createdAt": 1736784000000
+    }
+]

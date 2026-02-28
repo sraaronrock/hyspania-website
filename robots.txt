@@ -1,0 +1,17 @@
+# Robots.txt para Hyspania
+# Servidor #1 de Hytale en España
+# https://hyspania.net
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://hyspania.net/sitemap.xml
+
+# Bloquear archivos que no necesitan indexarse
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+# Permitir imágenes para Google Images
+User-agent: Googlebot-Image
+Allow: /assets/images/
